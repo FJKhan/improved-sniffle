@@ -1,0 +1,41 @@
+
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+  "rushVersion": "5.86.0",
+  "yarnVersion": "1.22.19",
+  "nodeSupportedVersionRange": ">=16.13.0",
+  "projectFolderMinDepth": 1,
+  "projectFolderMaxDepth": 2,
+  "ensureConsistentVersions": true,
+  "gitPolicy": {
+    "versionBumpCommitMessage": "[skip ci]: Bump versions",
+    "changeLogUpdateCommitMessage": "[skip ci]: Update changelogs",
+    "changefilesCommitMessage": "Rush change"
+  },
+
+  "repository": {
+"url": "https://github.com/FJKhan/improved-sniffle",
+"defaultBranch": "develop",
+"defaultRemote": "origin"
+  },
+  "eventHooks": {
+    "preRushInstall": [
+    ],
+    "postRushInstall": [],
+    "preRushBuild": [],
+    "postRushBuild": []
+  },
+"telemetryEnabled": true,
+  "projects": [
+    {
+      "packageName": "@fjkhan/superhero",
+      "projectFolder": "superhero",
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@fjkhan/vigilante",
+      "projectFolder": "vigilante",
+      "shouldPublish": true
+    }
+  ]
+}

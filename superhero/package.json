@@ -1,0 +1,12 @@
+{
+  "name": "@fjkhan/superhero",
+  "version": "0.0.0",
+  "description": "improving the sniffles one nostril at a time",
+  "main": "index.js",
+  "repository": "git@github.com:FJKhan/improved-sniffle.git",
+  "author": "FJKhan <fjgenus@gmail.com>",
+  "license": "unlicensed",
+  "scripts": {
+    "build": "echo We are building bro"
+  }
+}
