@@ -24,4 +24,5 @@ jobs:
       - name: Rush rebuild
         run: node common/scripts/install-run-rush.js rebuild --verbose
       - name: Publish packages
-        run: node common/scripts/install-run-rush.js publish --apply --target-branch targetBranch --publish --include-all
+        run: |
+          node common/scripts/install-run-rush.js publish --apply --target-branch targetBranch --publish --include-all --npm-auth-token ${{ secrets.GITHUB_TOKEN }}
