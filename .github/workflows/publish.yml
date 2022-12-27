@@ -1,0 +1,31 @@
+name: Publish Packages
+on:
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Git config user
+        uses: snow-actions/git-config-user@v1.0.0
+        with:
+          name: FJKhan
+          email: fjgenus@gmail.com
+      - name: Verify Change Logs
+        run: node common/scripts/install-run-rush.js change --verify
+      - name: Rush Install
+        run: node common/scripts/install-run-rush.js install
+      - name: Rush rebuild
+        run: node common/scripts/install-run-rush.js rebuild --verbose
+      - name: Publish packages
+        run: |
+          node common/scripts/install-run-rush.js publish --apply --target-branch main --include-all --publish --registry https://npm.pkg.github.com/ --npm-auth-token ${{ secrets.GITHUB_TOKEN }}

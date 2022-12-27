@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@fjkhan/superhero",
+      "comment": "add ci workflow",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@fjkhan/superhero"
+}
