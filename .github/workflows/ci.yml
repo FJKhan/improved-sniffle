@@ -17,4 +17,6 @@ jobs:
       - name: Rush Install
         run: node common/scripts/install-run-rush.js install
       - name: Rush rebuild
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
         run: node common/scripts/install-run-rush.js rebuild --verbose
