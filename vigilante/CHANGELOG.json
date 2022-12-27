@@ -1,0 +1,17 @@
+{
+  "name": "@fjkhan/vigilante",
+  "entries": [
+    {
+      "version": "0.0.0",
+      "tag": "@fjkhan/vigilante_v0.0.0",
+      "date": "Tue, 27 Dec 2022 17:49:54 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "add ci workflow for GA"
+          }
+        ]
+      }
+    }
+  ]
+}

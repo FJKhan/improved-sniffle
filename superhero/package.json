@@ -1,6 +1,6 @@
 {
   "name": "@fjkhan/superhero",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "improving the sniffles one nostril at a time",
   "main": "index.js",
   "repository": "git@github.com:FJKhan/improved-sniffle.git",
