@@ -19,4 +19,4 @@ jobs:
       - name: Rush rebuild
         run: node common/scripts/install-run-rush.js rebuild --verbose
       - name: Publish packages
-        run: node common/scripts/install-run-rush.js rush publish --apply --target-branch targetBranch --publish --registry registryUrl
+        run: node common/scripts/install-run-rush.js publish --apply --target-branch targetBranch --publish --registry registryUrl
