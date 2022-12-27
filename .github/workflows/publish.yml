@@ -28,4 +28,4 @@ jobs:
         run: node common/scripts/install-run-rush.js rebuild --verbose
       - name: Publish packages
         run: |
-          node common/scripts/install-run-rush.js publish --apply --target-branch origin/main --include-all --publish --registry https://npm.pkg.github.com/ --npm-auth-token ${{ secrets.GITHUB_TOKEN }}
+          node common/scripts/install-run-rush.js publish --apply --target-branch main --include-all --publish --registry https://npm.pkg.github.com/ --npm-auth-token ${{ secrets.GITHUB_TOKEN }}
