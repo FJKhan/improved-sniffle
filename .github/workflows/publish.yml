@@ -12,6 +12,11 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+      - name: Git config user
+        uses: snow-actions/git-config-user@v1.0.0
+        with:
+          name: FJKhan
+          email: fjgenus@gmail.com
       - name: Verify Change Logs
         run: node common/scripts/install-run-rush.js change --verify
       - name: Rush Install
@@ -19,6 +24,4 @@ jobs:
       - name: Rush rebuild
         run: node common/scripts/install-run-rush.js rebuild --verbose
       - name: Publish packages
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
         run: node common/scripts/install-run-rush.js publish --apply --target-branch targetBranch --publish --registry registryUrl
