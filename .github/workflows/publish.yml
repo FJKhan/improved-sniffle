@@ -21,11 +21,11 @@ jobs:
           name: FJKhan
           email: fjgenus@gmail.com
       - name: Verify Change Logs
-        run: node common/scripts/install-run-rush.js change --verify
+        run: node common/scripts/install-run-rush.js change --verify -b origin/main
       - name: Rush Install
         run: node common/scripts/install-run-rush.js install
       - name: Rush rebuild
         run: node common/scripts/install-run-rush.js rebuild --verbose
       - name: Publish packages
         run: |
-          node common/scripts/install-run-rush.js publish --apply --target-branch main --include-all --publish --registry https://npm.pkg.github.com/ --npm-auth-token ${{ secrets.GITHUB_TOKEN }}
+          node common/scripts/install-run-rush.js publish --apply --target-branch origin/main --include-all --publish --registry https://npm.pkg.github.com/ --npm-auth-token ${{ secrets.GITHUB_TOKEN }}
