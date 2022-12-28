@@ -1,4 +1,3 @@
-
 {
   "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
   "rushVersion": "5.86.0",
@@ -14,17 +13,16 @@
   },
 
   "repository": {
-"url": "https://github.com/FJKhan/improved-sniffle",
-"defaultRemote": "origin"
+    "url": "https://github.com/FJKhan/improved-sniffle",
+    "defaultRemote": "origin"
   },
   "eventHooks": {
-    "preRushInstall": [
-    ],
+    "preRushInstall": [],
     "postRushInstall": [],
     "preRushBuild": [],
     "postRushBuild": []
   },
-"telemetryEnabled": true,
+  "telemetryEnabled": true,
   "projects": [
     {
       "packageName": "@fjkhan/superhero",
