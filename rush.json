@@ -29,12 +29,14 @@
     {
       "packageName": "@fjkhan/superhero",
       "projectFolder": "superhero",
-      "shouldPublish": true
+      "shouldPublish": true,
+      "versionPolicyName": "MyRandomLibraries"
     },
     {
       "packageName": "@fjkhan/vigilante",
       "projectFolder": "vigilante",
-      "shouldPublish": true
+      "shouldPublish": true,
+      "versionPolicyName": "MyRandomLibraries"
     }
   ]
 }
