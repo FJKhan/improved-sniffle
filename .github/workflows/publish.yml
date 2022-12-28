@@ -21,7 +21,7 @@ jobs:
           name: FJKhan
           email: fjgenus@gmail.com
       - name: Verify Change Logs
-        run: node common/scripts/install-run-rush.js change --verify 
+        run: node common/scripts/install-run-rush.js change --verify --target-branch origin/main
       - name: Rush Install
         run: node common/scripts/install-run-rush.js install
       - name: Rush rebuild

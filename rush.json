@@ -15,7 +15,6 @@
 
   "repository": {
 "url": "https://github.com/FJKhan/improved-sniffle",
-"defaultBranch": "develop",
 "defaultRemote": "origin"
   },
   "eventHooks": {
