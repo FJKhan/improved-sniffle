@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@fjkhan/vigilante",
+      "comment": "entry point file",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@fjkhan/vigilante"
+}

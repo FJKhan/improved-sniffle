@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@fjkhan/superhero",
+      "comment": "add things",
+      "type": "minor"
+    }
+  ],
+  "packageName": "@fjkhan/superhero"
+}
