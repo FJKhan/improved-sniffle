@@ -30,4 +30,4 @@ jobs:
         run: node common/scripts/install-run-rush.js version --bump
       - name: Publish packages
         run: |
-          node common/scripts/install-run-rush.js publish --include-all --publish --apply main --registry https://npm.pkg.github.com/ --npm-auth-token ${{ secrets.GITHUB_TOKEN }}
+          node common/scripts/install-run-rush.js publish --include-all --publish --apply --target-branch main --registry https://npm.pkg.github.com/ --npm-auth-token ${{ secrets.GITHUB_TOKEN }}
