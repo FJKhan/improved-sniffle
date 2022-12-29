@@ -22,4 +22,4 @@ jobs:
         run: node common/scripts/install-run-rush.js change --verify -b origin/main
       - name: Publish packages
         run: |
-          node common/scripts/install-run-rush.js publish --apply --target-branch main --include-all --publish --registry https://npm.pkg.github.com/ --npm-auth-token ${{ secrets.GITHUB_TOKEN }}
+          node common/scripts/install-run-rush.js publish --apply --include-all --publish --registry https://npm.pkg.github.com/ --npm-auth-token ${{ secrets.GITHUB_TOKEN }}
