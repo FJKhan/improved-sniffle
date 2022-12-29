@@ -1,12 +1,9 @@
-name: Publish Release
+name: Publish Packages
 on:
   pull_request:
-    types: [ closed ]
     branches: [ "main" ]
 jobs:
   publish:
-    # this job will only run if the PR has been merged
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -20,6 +17,7 @@ jobs:
           node-version: 16
       - name: Verify Change Logs
         run: node common/scripts/install-run-rush.js change --verify -b origin/main
-      - name: Publish packages
-        run: |
-          node common/scripts/install-run-rush.js publish --apply --target-branch main --include-all --publish --registry https://npm.pkg.github.com/ --npm-auth-token ${{ secrets.GITHUB_TOKEN }}
+      - name: Rush Install
+        run: node common/scripts/install-run-rush.js install
+      - name: Rush rebuild
+        run: node common/scripts/install-run-rush.js rebuild --verbose
