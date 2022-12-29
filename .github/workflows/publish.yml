@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 16
       - name: Verify Change Logs
-        run: node common/scripts/install-run-rush.js change --verify -b origin/main
+        run: node common/scripts/install-run-rush.js change --verify
       - name: Publish packages
         run: |
           node common/scripts/install-run-rush.js publish --apply --include-all --publish --registry https://npm.pkg.github.com/ --npm-auth-token ${{ secrets.GITHUB_TOKEN }}
