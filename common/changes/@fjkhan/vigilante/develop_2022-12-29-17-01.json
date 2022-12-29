@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@fjkhan/vigilante",
+      "comment": "update vig",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@fjkhan/vigilante"
+}

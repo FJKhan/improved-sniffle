@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@fjkhan/vigilante",
+      "comment": "add ci workflow for GA",
+      "type": "none"
+    }
+  ],
+  "packageName": "@fjkhan/vigilante"
+}
