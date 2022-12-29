@@ -1,9 +1,9 @@
-name: Publish Packages
+name: Build Release
 on:
   pull_request:
     branches: [ "main" ]
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 16
       - name: Verify Change Logs
-        run: node common/scripts/install-run-rush.js change --verify -b origin/main
+        run: node common/scripts/install-run-rush.js change --verify
       - name: Rush Install
         run: node common/scripts/install-run-rush.js install
       - name: Rush rebuild
