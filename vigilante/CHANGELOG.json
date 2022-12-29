@@ -1,0 +1,41 @@
+{
+  "name": "@fjkhan/vigilante",
+  "entries": [
+    {
+      "version": "1.0.0",
+      "tag": "@fjkhan/vigilante_v1.0.0",
+      "date": "Thu, 29 Dec 2022 17:48:24 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "add ci workflow for GA"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "update things"
+          },
+          {
+            "comment": "add things"
+          }
+        ],
+        "patch": [
+          {
+            "comment": "entry point file"
+          },
+          {
+            "comment": "update vig"
+          }
+        ],
+        "major": [
+          {
+            "comment": "things"
+          },
+          {
+            "comment": "another thing"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@fjkhan/superhero",
+  "entries": [
+    {
+      "version": "1.0.0",
+      "tag": "@fjkhan/superhero_v1.0.0",
+      "date": "Thu, 29 Dec 2022 17:48:24 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "add ci workflow"
+          },
+          {
+            "comment": "things"
+          },
+          {
+            "comment": "something else"
+          }
+        ],
+        "major": [
+          {
+            "comment": "update things"
+          },
+          {
+            "comment": "im tired"
+          }
+        ],
+        "minor": [
+          {
+            "comment": "entry point file"
+          },
+          {
+            "comment": "add things"
+          },
+          {
+            "comment": "did a thing"
+          }
+        ]
+      }
+    }
+  ]
+}
