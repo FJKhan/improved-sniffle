@@ -1,4 +1,4 @@
-name: Publish Packages
+name: Build Release
 on:
   pull_request:
     branches: [ "main" ]
